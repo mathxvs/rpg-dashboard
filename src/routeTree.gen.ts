@@ -11,13 +11,13 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as SheetIndexImport } from './routes/sheet/index'
+import { Route as SheetImport } from './routes/sheet'
 
 // Create/Update Routes
 
-const SheetIndexRoute = SheetIndexImport.update({
-  id: '/sheet/',
-  path: '/sheet/',
+const SheetRoute = SheetImport.update({
+  id: '/sheet',
+  path: '/sheet',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -25,11 +25,11 @@ const SheetIndexRoute = SheetIndexImport.update({
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sheet/': {
-      id: '/sheet/'
+    '/sheet': {
+      id: '/sheet'
       path: '/sheet'
       fullPath: '/sheet'
-      preLoaderRoute: typeof SheetIndexImport
+      preLoaderRoute: typeof SheetImport
       parentRoute: typeof rootRoute
     }
   }
@@ -38,16 +38,16 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
-  '/sheet': typeof SheetIndexRoute
+  '/sheet': typeof SheetRoute
 }
 
 export interface FileRoutesByTo {
-  '/sheet': typeof SheetIndexRoute
+  '/sheet': typeof SheetRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
-  '/sheet/': typeof SheetIndexRoute
+  '/sheet': typeof SheetRoute
 }
 
 export interface FileRouteTypes {
@@ -55,16 +55,16 @@ export interface FileRouteTypes {
   fullPaths: '/sheet'
   fileRoutesByTo: FileRoutesByTo
   to: '/sheet'
-  id: '__root__' | '/sheet/'
+  id: '__root__' | '/sheet'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
-  SheetIndexRoute: typeof SheetIndexRoute
+  SheetRoute: typeof SheetRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  SheetIndexRoute: SheetIndexRoute,
+  SheetRoute: SheetRoute,
 }
 
 export const routeTree = rootRoute
@@ -77,11 +77,11 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/sheet/"
+        "/sheet"
       ]
     },
-    "/sheet/": {
-      "filePath": "sheet/index.tsx"
+    "/sheet": {
+      "filePath": "sheet.tsx"
     }
   }
 }

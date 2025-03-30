@@ -4,14 +4,15 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite && bun run watch-routes",
-        "build": "vite build && bun run gen-routes && tsc -b",
+        "dev": "tsr generate && vite && tsr watch",
+        "build": "vite build && tsr generate && tsc -b",
         "lint": "eslint .",
         "preview": "vite preview",
-        "gen-routes": "tsr generate",
-        "watch-routes": "tsr watch"
+        "tsr-gen": "tsr generate",
+        "tsr-watch": "tsr watch"
     },
     "dependencies": {
+        "@phosphor-icons/react": "^2.1.7",
         "@tailwindcss/vite": "^4.0.17",
         "@tanstack/react-router": "^1.114.29",
         "@types/node": "^22.13.14",
@@ -19,6 +20,7 @@
         "prettier-plugin-tailwindcss": "^0.6.11",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
+        "tailwind-merge": "^3.0.2",
         "tailwindcss": "^4.0.17"
     },
     "devDependencies": {

@@ -1,9 +1,12 @@
-@import "tailwindcss";
-
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+@import "tailwindcss";
+
 @theme {
+    --color-ecos-blue: oklch(0.26 0.0318 258.31);
+    --color-ecos-gold: oklch(0.84 0.1446 76.37);
+
     --color-neutral-1: oklch(0.18 0 0);
     --color-neutral-2: oklch(0.21 0 0);
     --color-neutral-3: oklch(0.25 0 0);
@@ -16,10 +19,45 @@
     --color-neutral-10: oklch(0.58 0 0);
     --color-neutral-11: oklch(0.77 0 0);
     --color-neutral-12: oklch(0.95 0 0);
-    --color-ecos-blue: oklch(0.26 0.0318 258.31);
-    --color-ecos-gold: oklch(0.84 0.1446 76.37);
+
+    --color-red-1: oklch(0.19 0.0135 18.42);
+    --color-red-2: oklch(0.2 0.0217 14.06);
+    --color-red-3: oklch(0.25 0.0649 12.69);
+    --color-red-4: oklch(0.29 0.0951 14.33);
+    --color-red-5: oklch(0.33 0.1067 15.53);
+    --color-red-6: oklch(0.38 0.1108 16.8);
+    --color-red-7: oklch(0.45 0.1211 18.77);
+    --color-red-8: oklch(0.54 0.1458 21.76);
+    --color-red-9: oklch(0.63 0.1933 23.03);
+    --color-red-10: oklch(0.66 0.1774 22.85);
+    --color-red-11: oklch(0.78 0.1281 22.14);
+    --color-red-12: oklch(0.9 0.0527 6.45);
+
+    --color-green-1: oklch(0.19 0.0135 169.78);
+    --color-green-2: oklch(0.22 0.0165 168.2);
+    --color-green-3: oklch(0.27 0.0434 165.19);
+    --color-green-4: oklch(0.32 0.0572 167.62);
+    --color-green-5: oklch(0.36 0.0639 168.17);
+    --color-green-6: oklch(0.41 0.0687 169.57);
+    --color-green-7: oklch(0.47 0.0758 170.27);
+    --color-green-8: oklch(0.54 0.0875 172.23);
+    --color-green-9: oklch(0.64 0.115 170.73);
+    --color-green-10: oklch(0.68 0.1256 169.57);
+    --color-green-11: oklch(0.79 0.1559 167.11);
+    --color-green-12: oklch(0.9 0.0776 166.88);
+
+    --font-sans: "Rubik";
+    --font-serif: "Bitter";
 }
 
 body {
     @apply bg-neutral-1 text-neutral-12;
+}
+
+*::selection {
+    @apply bg-ecos-gold/30 text-ecos-gold;
+}
+
+* {
+    @apply outline-none;
 }
