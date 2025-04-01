@@ -26,7 +26,7 @@ const TableHeader = React.forwardRef<HeaderElement, HeaderProps>(
         const { children, className, ...headerProps } = props;
 
         const style: typeof className =
-            "flex w-full gap-2 bg-neutral-1 p-2 text-sm font-medium text-neutral-11 uppercase";
+            "flex w-full gap-2 bg-neutral-1 p-2 text-xs rounded-xs font-medium text-neutral-11 uppercase";
 
         return (
             <header

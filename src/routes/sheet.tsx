@@ -4,6 +4,7 @@ import CharStats from "@/components/sheet/charStats";
 import Skills from "@/components/sheet/skills";
 import Actions from "@/components/sheet/actions";
 import { createFileRoute } from "@tanstack/react-router";
+import SecondaryStats from "@/components/sheet/secStats";
 
 function Sheet() {
     return (
@@ -16,9 +17,10 @@ function Sheet() {
                 <CharStats />
             </section>
 
-            <section className="grid grid-cols-[2fr_4fr_1fr] gap-8">
+            <section className="grid grid-cols-[2fr_4fr_2fr] gap-8">
                 <Skills />
                 <Actions />
+                <SecondaryStats />
             </section>
         </main>
     );

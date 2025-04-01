@@ -1,6 +1,8 @@
 import { Tabs } from "..";
 import Container from "../container";
+import Abilities from "./abilities";
 import Combat from "./combat";
+import Rituals from "./rituals";
 
 export default function Action() {
     return (
@@ -16,6 +18,12 @@ export default function Action() {
 
                 <Tabs.Content value="actions_1">
                     <Combat />
+                </Tabs.Content>
+                <Tabs.Content value="actions_2">
+                    <Abilities />
+                </Tabs.Content>
+                <Tabs.Content value="actions_3">
+                    <Rituals />
                 </Tabs.Content>
             </Tabs.Root>
         </Container>

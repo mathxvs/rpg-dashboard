@@ -26,28 +26,21 @@ export default function Skills() {
                     </Table.Cell>
                 </Table.Header>
 
-                <Table.Row
-                    // className="hover:bg-neutral-3 transition-all cursor-pointer focus-visible:ring-2 focus-visible:hover:bg-neutral-3 ring-ecos-gold"
-                    // tabIndex={0}
-                    clickable
-                >
+                <Table.Row clickable className="font-medium">
                     <Table.Cell className="grow">Acrobacia</Table.Cell>
                     <Table.Cell
-                        className="w-10 text-xs bg-neutral-4 py-1 font-medium rounded-sm"
+                        className="w-10 text-xs bg-neutral-4 py-1 rounded-sm"
                         align="center"
                     >
                         AGI
                     </Table.Cell>
                     <Table.Cell
-                        className="w-12 bg-neutral-1 font-medium p-1 rounded-sm cursor-text"
+                        className="w-12 bg-neutral-1 p-1 rounded-sm cursor-text"
                         align="center"
                     >
                         0
                     </Table.Cell>
-                    <Table.Cell
-                        className="w-12 text-neutral-11 font-medium"
-                        align="center"
-                    >
+                    <Table.Cell className="w-12 text-neutral-11" align="center">
                         +2
                     </Table.Cell>
                 </Table.Row>

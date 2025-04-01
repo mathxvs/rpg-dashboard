@@ -16,10 +16,10 @@ export default function Combat() {
                 </Table.Cell>
             </Table.Header>
 
-            <Table.Row clickable>
+            <Table.Row clickable className="font-medium">
                 <Table.Cell className="flex flex-col w-1/2 items-start">
-                    <span className="font-medium text-base">Montante</span>
-                    <span className="text-xs font-medium text-neutral-11 italic uppercase">
+                    <span className="text-base">Montante</span>
+                    <span className="text-xs  text-neutral-11 italic uppercase">
                         Corpo a Corpo
                     </span>
                 </Table.Cell>
@@ -27,13 +27,13 @@ export default function Combat() {
                 <Table.Cell
                     flexible
                     align="center"
-                    className="bg-neutral-4 py-2 font-medium rounded-sm"
+                    className="bg-neutral-4 py-2 rounded-sm"
                 >
                     Luta
                 </Table.Cell>
                 <Table.Cell flexible align="center" className="flex flex-col">
                     1D4
-                    <span className="text-center text-xs font-medium text-neutral-11 uppercase">
+                    <span className="text-center text-xs text-neutral-11 uppercase">
                         Sangue
                     </span>
                 </Table.Cell>

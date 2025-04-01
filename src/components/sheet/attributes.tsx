@@ -12,13 +12,11 @@ export default function Attributes() {
 
     return (
         <Container>
-            <header className="flex flex-row gap-2 justify-between items-center">
+            <header className="flex flex-row gap-2 justify-between items-center mb-4">
                 <h3 className="text-neutral-11 font-serif font-bold tracking-wide uppercase text-lg">
                     Atributos
                 </h3>
             </header>
-
-            <div className="size-4" />
 
             <main className="flex flex-row w-full gap-4">
                 {AttrDemo.map((attr) => (

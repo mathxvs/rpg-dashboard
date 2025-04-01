@@ -33,6 +33,19 @@
     --color-red-11: oklch(0.78 0.1281 22.14);
     --color-red-12: oklch(0.9 0.0527 6.45);
 
+    --color-yellow-1: oklch(0.19 0.0134 77.8);
+    --color-yellow-2: oklch(0.21 0.0184 81.99);
+    --color-yellow-3: oklch(0.26 0.0442 74.48);
+    --color-yellow-4: oklch(0.3 0.062665 73.879);
+    --color-yellow-5: oklch(0.34 0.071673 72.8976);
+    --color-yellow-6: oklch(0.39 0.0784 75.25);
+    --color-yellow-7: oklch(0.45 0.0824 74.96);
+    --color-yellow-8: oklch(0.54 0.0964 73.44);
+    --color-yellow-9: oklch(0.85 0.1572 84.13);
+    --color-yellow-10: oklch(0.88 0.1805 94.78);
+    --color-yellow-11: oklch(0.86 0.173 89.02);
+    --color-yellow-12: oklch(0.94 0.0717 86.07);
+
     --color-green-1: oklch(0.19 0.0135 169.78);
     --color-green-2: oklch(0.22 0.0165 168.2);
     --color-green-3: oklch(0.27 0.0434 165.19);
@@ -45,6 +58,19 @@
     --color-green-10: oklch(0.68 0.1256 169.57);
     --color-green-11: oklch(0.79 0.1559 167.11);
     --color-green-12: oklch(0.9 0.0776 166.88);
+
+    --color-violet-1: oklch(0.19 0.0261 290.76);
+    --color-violet-2: oklch(0.21 0.032 300.93);
+    --color-violet-3: oklch(0.27 0.0655 294.41);
+    --color-violet-4: oklch(0.31 0.093 292.08);
+    --color-violet-5: oklch(0.35 0.0991 291.33);
+    --color-violet-6: oklch(0.39 0.1021 292.12);
+    --color-violet-7: oklch(0.44 0.1103 291.97);
+    --color-violet-8: oklch(0.52 0.1305 290.29);
+    --color-violet-9: oklch(0.54 0.179 288.03);
+    --color-violet-10: oklch(0.59 0.1692 289.35);
+    --color-violet-11: oklch(0.78 0.1246 293.19);
+    --color-violet-12: oklch(0.91 0.045 292.44);
 
     --font-sans: "Rubik";
     --font-serif: "Bitter";
